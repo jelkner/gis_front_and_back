@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font: 62.5% sans-serif;
+    background: white;
+    overflow-x: hidden;
+}
+header {
+    background: rgb(255, 127, 80);
+    padding: 1rem;
+    color: white;
+    font-size: 2.4rem;
+    overflow: hidden;
+}
+h2 {
+    font-size: 2rem;
+}
+hr {
+    margin: 2rem 0 0 0;
+}
+.container {
+    padding: 0 1rem;
+}
+.no-items::after {
+    content: "No notes yet";
+    padding: 1rem;
+    display: block;
+}
+#note-text {
+    width: 100%;
+    height: 10rem;
+    font-size: 1.5rem;
+}
+#save {
+    width: 10rem;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+#notes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+#notes li {
+    padding: 1em;
+    border-bottom: solid 1px gray;
+}

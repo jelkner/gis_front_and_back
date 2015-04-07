@@ -1,0 +1,13 @@
+{
+  "name": "Note App",
+  "version": "0.0.1",
+  "description": "A great first example FXOS app.",
+  "launch_path": "/note.html",
+  "icons": {
+    "128": "/icons/note-128.png"
+  },
+  "developer": {
+    "name": "ATIC Mobile Dev Team",
+    "url": "http://www.arltechinnovation.us/"
+  }
+}
