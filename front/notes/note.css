@@ -18,7 +18,7 @@ h2 {
 hr {
     margin: 2rem 0 0 0;
 }
-.container {
+main {
     padding: 0 1rem;
 }
 .no-items::after {
@@ -28,11 +28,11 @@ hr {
 }
 #note-text {
     width: 100%;
-    height: 9rem;
+    height: 10rem;
     font-size: 1.5rem;
 }
 #save {
-    width: 10rem;
+    width: 30vw;
     font-size: 2rem;
     padding: 0.5rem 0;
 }
