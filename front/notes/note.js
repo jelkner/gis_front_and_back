@@ -2,6 +2,31 @@
     var newNote = document.querySelector('#note-text');
     var saveButton = document.querySelector('#save');
     var notes = document.querySelector('#notes');
+    var contacts = document.querySelector('#contacts');
+
+    function getContacts() {
+        if (!('mozContacts' in navigator)) {
+            return;
+        }
+
+        var req = window.navigator.mozContacts.getAll();
+
+        req.onsuccess = function() {
+            if (!this.result) return;
+
+            var option = document.createElement('option');
+            option.textContent = this.result.givenName + ' ' +
+                                 this.result.familyName;
+            contacts.appendChild(option);
+
+            this.continue;
+        };
+
+        req.onerror = function() {
+            console.error('Could not recieve contacts!', req.error);
+        };
+    }
+    getContacts();
 
     saveButton.addEventListener('click', function() {
         function store(location) {

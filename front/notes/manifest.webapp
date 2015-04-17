@@ -9,5 +9,12 @@
   "developer": {
     "name": "ATIC Mobile Dev Team",
     "url": "http://www.arltechinnovation.us/"
+  },
+  "type": "privileged",
+  "permissions": {
+    "contacts": {
+      "access": "readonly",
+      "description": "Assign a note to one of your contacts"
+    }
   }
 }
