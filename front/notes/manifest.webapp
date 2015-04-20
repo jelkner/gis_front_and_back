@@ -15,6 +15,9 @@
     "contacts": {
       "access": "readonly",
       "description": "Assign a note to one of your contacts"
+    },
+    "geolocation": {
+      "description": "Required to get current location of user"
     }
   }
 }
