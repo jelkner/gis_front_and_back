@@ -50,7 +50,7 @@
             }, function (err) {
                 console.error('Failed to get user location', err);
                 store('Could not get your location');
-            });
+            }, {"timeout":2500});
         } else {
             store('You don\'t have GPS');
         }
