@@ -2,7 +2,7 @@
 
 ## Required Packages on Ubuntu 14.04:
 
-* python-pyshp
+* python-pyshp (or python3-pyshp)
 * python-mapnik
 
 ## Data Sources
@@ -23,10 +23,23 @@ scripts.
   `python3-pyshp` debian package on Ubuntu.
   </dd>
 
-  <dt>put_roads_on_map.py</dt>
+  <dt>draw_roads.py</dt>
   <dd>
-  Creates a map of selected roads in Arlington County, Virginia from the
+  Creates a map of all the roads in Arlington County, Virginia from the
   `Roads.shp`. Written in Python 2 and requires the `python-mapnik` debian
   package on Ubuntu.
+  </dd>
+
+  <dt>a_roads_shape.py</dt>
+  <dd>
+  Creates a map of of the precincts in Arlington County, Virginia from the
+  `Voter_Precincts.shp` and adds a single road shape from `Roads.shp` as a
+  second layer. Written in Python 2.
+  </dd>
+
+  <dt>roads_near_columbia_pike.py</dt>
+  <dd>
+  Creates a map of selected roads near Columbia Pike in Arlington County,
+  Virginia from the `Roads.shp`. Written in Python 2.
   </dd>
 </dl>
